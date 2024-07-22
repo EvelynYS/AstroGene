@@ -10,6 +10,8 @@ import { formatDateTime, parseStringify } from "../utils";
 import { Appointment } from "@/types/appwrite.types";
 import { revalidatePath } from "next/cache";
 
+export const dynamic = 'force-dynamic';
+
 export const createAppointment = async (
   appointment: CreateAppointmentParams
 ) => {
